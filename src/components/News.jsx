@@ -15,9 +15,7 @@ const News = ({ simplified }) => {
   const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 7 : 13 });
   const { data } = useGetCryptosQuery(100);
 
-  if (!cryptoNews?.value) return Loader;
-
-  console.log(cryptoNews);
+  if (!cryptoNews?.value) return <Loader />;
 
   return (
     <>

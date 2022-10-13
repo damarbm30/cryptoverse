@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { Layout } from "antd";
 
 import { Navbar, Home, Cryptocurrencies, CryptoDetails, News, Footer } from "./components";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   return (
